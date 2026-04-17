@@ -6,6 +6,8 @@ import os
 
 from flask import Flask
 
+RAG_CHUNK_SIZE=110
+RAG_CHUNK_OVERLAP=1
 
 def create_app(test_config: dict | None = None) -> Flask:
     """Crea e configura l'istanza Flask.
